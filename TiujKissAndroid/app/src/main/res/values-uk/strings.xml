@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name"> Kiss My Ass </string>
+    <string name="full_screen_ad">ca-app-pub-7763141267799460/4831870230</string>
+    <string name="banner_screen_ad">ca-app-pub-7763141267799460/9401670637</string>
+
+    <string name="action_settings"> Налаштування </string>
+    <string name="action_logout"> Вийти </string>
+    <string name="action_profile"> Профіль </string>
+
+    <string name="delete_account">Удалить аккаунт</string>
+
+    <string name="action_send"> Надіслати </string>
+    <string name="prompt_message"> Повідомлення </string>
+
+    <string name="btn_edit"> Редагувати </string>
+    <string name="btn_cancel"> Скасувати </string>
+    <string name="btn_save"> Зберегти </string>
+    <string name="btn_kiss"> Поцілунок </string>
+    <string name="btn_message"> Відправити повідомлення </string>
+
+    <string name="kissed_your_ass"> Цей користувач поцілував тебе.</string>
+
+    <string name="prompt_name">Ім’я</string>
+    <string name="prompt_surname"> Прізвище </string>
+    <string name="prompt_email"> Електронна адреса </string>
+    <string name="prompt_password"> Пароль</string>
+    <string name="radio_male"> Чоловік </string>
+    <string name="radio_female"> Жінка </string>
+    <string name="action_sign_in"> Увійти </string>
+    <string name="action_register"> Реєстрація </string>
+    <string name="action_sign_in_short"> Увійти </string>
+    <string name="action_done"> Виконано </string>
+    <string name="search"> Пошук </string>
+    <string name="Age"> Вік </string>
+    <string name="gender"> Стать </string>
+    <string name="birthday"> День народження </string>
+    <string name="about"> Про </string>
+
+    <string name="no_feedback_text"> Немає будь-якої зворотного зв язку поки!</string>
+    <string name="no_message_text"> Немає будь-яких повідомлень Ще!</string>
+    <string name="Home">Головна</string>
+    <string name="Messages"> Повідомлення </string>
+    <string name="Feedbacks"> Відгук </string>
+    <string name="Profile"> Профіль </string>
+    <string name="choose_event"> Вибір події </string>
+    <string name="show_image"> Показати зображення профілю </string>
+    <string name="change_image"> Зміна профілю зображення </string>
+    <string name="delete_conversation"> Видалити розмову </string>
+    <string name="message_detail"> Деталі повідомлень </string>
+    <string name="delete_message"> Видалити повідомлення </string>
+    <string name="copy_text"> Копіювання тексту </string>
+    <string name="sent_date"> Відправлено Дата: </string>
+    <string name="delivered_date"> Доставлено Дата: </string>
+    <string name="seen_date"> Переглянуто Дата: </string>
+
+    <string name="cancel"> Скасувати </string>
+    <string name="error_invalid_email"> Ця електронна адреса недійсна </string>
+    <string name="error_invalid_password"> Цей пароль занадто короткий </string>
+    <string name="error_incorrect_password"> Цей пароль невірний </string>
+    <string name="error_field_required"> Це поле є обов язковим </string>
+    <string name="permission_rationale">" Контакти дозволи необхідні для забезпечення електронної пошти поповнень." </string>
+
+    <string name="pick_image_intent_text"> Виберіть зображення </string>
+    <string name="pick_image_message"> Натисніть на зображення, щоб вибрати нове зображення:</string>
+
+
+
+
+
+
+
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact    based on your message history</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>

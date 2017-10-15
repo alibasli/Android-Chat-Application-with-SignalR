@@ -1,0 +1,69 @@
+﻿@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Otel Yonetimi</title>
+
+    <!-- Vendor CSS -->
+    <!-- CSS -->
+    @RenderSection("Styles", false)
+    @Styles.Render("~/css/_MainLayout")
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body class=" sw-toggled OpenSansFont">
+    @*<div id="wrappe" class="OpenSansFont">*@
+
+    @Html.Partial("~/Views/Shared/HeaderLogin.cshtml")
+    <section id="main" data-layout="layout-1">
+        @Html.Partial("~/Views/Shared/SideBar.cshtml")
+        <section id="content">
+            @RenderBody()
+        </section>
+    </section>
+    @*<div id="footer">
+            <div class="cardCustom Socialfont" style="height:80px !important;display:inline-block;width:100%;">
+                Copyright © 2015  Social A.Ş<br />
+
+
+                Mail: info@Social.com.tr <br /> Tel:+90 212 222 50 90 / Fax:+90 212 320 48 58
+
+            </div>
+        </div>*@
+    @*</div>*@
+
+    <!-- Page Loader -->
+    @*<div class="page-loader">
+        <div class="preloader pls-teal">
+            <svg class="pl-circular" viewBox="25 25 50 50">
+                <circle class="plc-path" cx="50" cy="50" r="20" />
+            </svg>
+
+            <p>STR_PLEASE_WAIT...</p>
+        </div>
+    </div>*@
+    @Scripts.Render("~/script/jquery")
+    @Scripts.Render("~/script/jqueryval")
+    @Scripts.Render("~/script/bootstrap")
+    @Scripts.Render("~/script/_MainLayout")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+@*@Html.Partial("~/Views/Shared/FooterLayout.cshtml")*@

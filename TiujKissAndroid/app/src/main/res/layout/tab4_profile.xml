@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_failed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="An error has occurred!"
+            android:textSize="40px"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:visibility="gone"
+        android:id="@+id/view_image_full">
+        <ImageView
+            android:id="@+id/image_view_full_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/default_profile"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tbl_profile_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tbl_profile_photo">
+
+                <TableRow
+                    android:id="@+id/tbl_profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.5"
+                        android:minWidth="100dp">
+                        <!--<goodapp.company.kissmyass.Class.CircleImageView -->
+                        <ImageView
+                            android:id="@+id/image_view"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/default_profile" />
+<!--
+                        <ImageView
+                            android:id="@+id/change_profile"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_alignBottom="@+id/image_view"
+                            android:layout_gravity="center"
+                            android:src="@drawable/change_profile" />
+-->
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <!--<goodapp.company.kissmyass.Class.CircleImageView -->
+
+                        <TextView
+                            android:id="@+id/txt_header_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textSize="40px"
+                            android:gravity="left|center_vertical"
+                            android:textStyle="bold|italic" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/prompt_name"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp"
+                        android:text="@string/prompt_name"
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_txt_name"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight=".6"
+                        android:paddingLeft="5dp"
+                        android:background="@color/White"
+                        android:hint="name"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/prompt_surname"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_surname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="@string/prompt_surname"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp"/>
+
+                    <EditText
+                        android:id="@+id/edit_txt_surname"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight=".6"
+                        android:background="@color/White"
+                        android:hint="surname"
+                        android:textSize="13sp"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/birthday"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_birthday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="@string/birthday"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp"/>
+
+                    <EditText
+                        android:id="@+id/edit_txt_birthday"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight=".6"
+                        android:ems="10"
+                        android:background="@color/White"
+                        android:paddingLeft="5dp"
+                        android:hint="@string/birthday"
+                        android:inputType="date"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/gender"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="@string/gender"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radio_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="horizontal"
+                        android:background="@color/White"
+                        android:padding="1dp"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:checked="true"
+                            android:text="@string/radio_male" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:text="@string/radio_female" />
+
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/prompt_email"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="@string/prompt_email"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp" />
+<!--
+                    <EditText
+                        android:id="@+id/edit_txt_email"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight=".6"
+                        android:background="@color/White"
+                        android:paddingLeft="5dp"
+                        android:hint="email"
+                        android:textSize="25px"
+                        android:visibility="gone" />
+                        -->
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/SlateGrey" />
+
+
+                <TableRow android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="30dp"
+                        android:layout_weight=".3"
+                        android:paddingLeft="1dp"
+                        android:text="@string/about"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txt_about"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="textMultiLine"
+                        android:text="about"
+                        android:textSize="25px" />
+
+                    <EditText
+                        android:id="@+id/edit_txt_about"
+                        android:layout_width="0dip"
+                        android:layout_height="40dp"
+                        android:layout_weight=".6"
+                        android:hint="about"
+                        android:background="@color/White"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:gravity="left|center_vertical"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </TableRow>
+
+
+                <TableRow android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/SlateGrey"
+                        android:text="@string/btn_edit"
+                        android:textColor="@color/White"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/Tomato"
+                        android:text="@string/btn_cancel"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/SteelBlue"
+                        android:text="@string/btn_save"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </TableRow>
+                <TableRow android:layout_margin="5dp">
+                    <Button
+                        android:id="@+id/btn_logout"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/SteelBlue"
+                        android:text="@string/action_logout"
+                        android:textColor="@color/White"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:layout_margin="5dp">
+                    <Button
+                        android:id="@+id/btn_delete_account"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/Tomato"
+                        android:text="@string/delete_account"
+                        android:textColor="@color/White"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+
+    <TableRow
+        android:layout_weight="0.40"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp">
+        <goodapp.company.kissmyass.Class.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_profile"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+            <TableRow android:padding="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/name_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold|italic"
+                    android:text="User"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"/>
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:paddingLeft="10dp"
+                    android:text="age"
+                    android:textSize="14sp"
+                    android:gravity="right|center_vertical"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>

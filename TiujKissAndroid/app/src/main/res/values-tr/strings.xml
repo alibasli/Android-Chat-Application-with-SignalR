@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name"> Kiss My Ass </string>
+
+    <string name="full_screen_ad">ca-app-pub-7763141267799460/4831870230</string>
+    <string name="banner_screen_ad">ca-app-pub-7763141267799460/9401670637</string>
+
+    <string name="action_settings">Ayarlar</string>
+    <string name="action_logout">Çıkış</string>
+    <string name="action_profile">Profilim</string>
+
+    <string name="delete_account">Hesabı Sil</string>
+
+    <string name="action_send">Gönder</string>
+    <string name="prompt_message">Mesaj yaz</string>
+
+    <string name="btn_edit">Düzenle</string>
+    <string name="btn_cancel">Iptal</string>
+    <string name="btn_save">Kaydet</string>
+    <string name="btn_kiss">Kiss</string>
+    <string name="btn_message">Mesaj At</string>
+
+    <string name="kissed_your_ass">Bu kullanıcı sizi öptü.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">Ad</string>
+    <string name="prompt_surname">Soyad</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="radio_male">Erkek</string>
+    <string name="radio_female">Kadın</string>
+    <string name="action_sign_in">Giriş Yap</string>
+    <string name="action_register">Üye Ol</string>
+    <string name="action_sign_in_short">Giriş Yap</string>
+    <string name="action_done">Tamamlandı</string>
+    <string name="search">Ara</string>
+    <string name="Age">Yaş</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="birthday">Doğum</string>
+    <string name="about">Hakkında</string>
+
+    <string name="no_feedback_text">Henüz bildiriminiz yok.</string>
+    <string name="no_message_text">Henüz mesajınız yok.</string>
+
+
+    <string name="Home">Ana Sayfa</string>
+    <string name="Messages">Mesajlar</string>
+    <string name="Feedbacks">Bildirimler</string>
+    <string name="Profile">Profilim</string>
+
+    <string name="choose_event">İşlem Seçiniz</string>
+    <string name="show_image">Resmi Görüntüle</string>
+    <string name="change_image">Profili Değiştir</string>
+    <string name="delete_conversation">Sohbeti Sil</string>
+    <string name="message_detail">Mesaj Detayı</string>
+    <string name="delete_message">Mesajı Sil</string>
+    <string name="copy_text">Texti Kopyala</string>
+    <string name="sent_date">Gönderilme Tarihi : </string>
+    <string name="delivered_date">İletim Tarihi : </string>
+    <string name="seen_date">Görülme Tarihi : </string>
+
+    <string name="cancel">Kapat </string>
+
+
+    <string name="error_invalid_email">Bu e-posta adresi geçersiz!</string>
+    <string name="error_invalid_password">Bu şifre çok kısa!</string>
+    <string name="error_incorrect_password">Bu şifre geçersiz!</string>
+    <string name="error_field_required">Gerekli alan!</string>
+    <string name="permission_rationale">"İletişim sağlamak için e-posta  gereklidir." </string>
+
+    <string name="pick_image_intent_text">Bir Resim Seçiniz</string>
+    <string name="pick_image_message">Yeni bir resim seçmek için resmin üzerine tıklayın:</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Genel</string>
+
+    <string name="pref_title_social_recommendations">Sosyal öneriler etkinleştirme</string>
+    <string name="pref_description_social_recommendations">insanlar iletişim için Öneriler mesaj geçmişine dayalı</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>

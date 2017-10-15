@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="MESSAGE_ID" type="id"/>
+    <item name="MESSAGE_CONTENT" type="id"/>
+    <item name="USER_ID" type="id"/>
+    <item name="SENDER_ID" type="id"/>
+    <item name="FEEDBACK_ID" type="id"/>
+    <item name="CHAT_ID" type="id"/>
+    <item name="HOLDER" type="id"/>
+</resources>

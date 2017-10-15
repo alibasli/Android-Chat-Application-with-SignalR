@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "socketExam";
+}
+
+<h2>socketExam</h2>
+
+<form id="chatform" action="">
+         <input id="inputbox" />
+    
+</form>
+   <div id="messages" />
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+
+<script type="text/javascript">
+    
+     $(document).ready(function () {
+         
+             var username = prompt('Please enter a username:');
+
+             var uri = 'ws://192.168.0.12:2255/Api/Socket/' + username;
+             websocket = new WebSocket(uri);
+             //alert(uri);
+             websocket.onopen = function () {
+                     $('#messages').prepend('<div>Connected.</div>');
+
+                     $('#chatform').submit(function (event) {
+                             websocket.send($('#inputbox').val());
+                             $('#inputbox').val('');
+                             event.preventDefault();
+                             return false;
+                         });
+                 };
+
+             websocket.onerror = function (event) {
+                     $('#messages').prepend('<div>ERROR</div>');
+                 };
+
+             websocket.onmessage = function (event) {
+                     $('#messages').prepend('<div>' + event.data + '</div>');
+                 };
+         });
+</script>

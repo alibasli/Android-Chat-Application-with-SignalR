@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/SteelBlue"
+        android:id="@+id/custom_toolbar">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:onClick="goBack"
+            android:src="@drawable/back_button"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:textSize="40px"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin">
+            <TableRow >
+                <TextView
+                    android:defaultValue="-1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:padding="2dp"
+                    android:text="Country"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:textColor="@color/SlateGrey"/>
+            </TableRow>
+            <TableRow  android:background="@color/White"
+               >
+                <ListDialog
+                    android:layout_width="0dp"
+                    android:background="@color/White"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/pref_sync_frequency_titles"
+                    android:entryValues="@array/pref_sync_frequency_values"
+                    android:key="list_country"
+                    android:textSize="16sp"
+                    android:textColor="@color/SlateGrey"/>
+            </TableRow>
+            <TableRow android:background="@color/White"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/Tomato"
+                    android:text="@string/btn_cancel"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btn_save"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/SteelBlue"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

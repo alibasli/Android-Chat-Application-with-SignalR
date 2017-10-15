@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackGround">#e3e3e3</color>
+    <color name="White">#ffffff</color>
+    <color name="Red">#ff0000</color>
+    <color name="SlateGrey">#708090</color>
+    <color name="Tomato">#FF6347</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="YellowGreen">#9ACD32</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="Black">#000000</color>
+    <color name="SteelBlue">#4682B4</color>
+
+
+</resources>

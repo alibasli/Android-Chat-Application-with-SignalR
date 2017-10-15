@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/SteelBlue"
+        android:id="@+id/custom_toolbar">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:onClick="goBack"
+            android:src="@drawable/back_button"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:textSize="40px"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/custom_toolbar">
+
+        <TableLayout
+            android:id="@+id/tbl_profile_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbl_profile_photo"
+            android:layout_span="2"
+            android:layout_weight="1"
+            >
+
+            <TableRow>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto">
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="@string/banner_screen_ad"
+                        android:layout_alignParentBottom="true"
+                        />
+                </FrameLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tbl_profile_photo"
+                android:layout_width="match_parent"
+                android:background="@color/White">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/default_profile" />
+
+
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:paddingLeft="1dp"
+                    android:text="@string/prompt_name"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:text="@string/prompt_name"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:paddingLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prompt_surname"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_surname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="@string/prompt_surname"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:paddingLeft="1dp"
+                    android:text="@string/birthday"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="@string/birthday"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="1dp"
+                    android:text="@string/gender"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="@string/gender"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp" android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:paddingLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prompt_email"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="@string/prompt_email"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"/>
+            </TableRow>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/SlateGrey" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="1dp"
+                    android:text="@string/about"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txt_about"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:inputType="textMultiLine"
+                    android:text="@string/about"
+                    android:textSize="13sp"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/btn_kiss"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/Tomato"
+                    android:text="@string/btn_kiss"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_message"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/SteelBlue"
+                    android:text="@string/btn_message"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

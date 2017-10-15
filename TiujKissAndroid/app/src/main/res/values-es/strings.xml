@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Kiss My Ass </string>
+
+    <string name="full_screen_ad">ca-app-pub-7763141267799460/4831870230</string>
+    <string name="banner_screen_ad">ca-app-pub-7763141267799460/9401670637</string>
+
+    <string name="action_settings">Herramientas</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="action_profile">Perfil</string>
+
+    <string name="delete_account">Borrar Cuenta</string>
+
+    <string name="action_send">Enviar</string>
+    <string name="prompt_message">Mensaje</string>
+
+    <string name="btn_edit">Editar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_kiss">Beso</string>
+    <string name="btn_message">Enviar mensaje</string>
+
+    <string name="kissed_your_ass">Este usuario le dio un beso.</string>
+
+
+    <string name="prompt_name">Nombre</string>
+    <string name="prompt_surname">Apellido</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña </string>
+    <string name="radio_male">Hombre</string>
+    <string name="radio_female">Mujer</string>
+    <string name="action_sign_in">Registrarse </string>
+    <string name="action_register">Registro</string>
+    <string name="action_sign_in_short">Iniciar sesión</string>
+    <string name="action_done">Hecho</string>
+    <string name="search">Buscar</string>
+    <string name="Age">Edad</string>
+    <string name="gender">Género</string>
+    <string name="birthday">Cumpleaños</string>
+    <string name="about">A cerca de</string>
+
+    <string name="no_feedback_text">Todavía sin respuesta!</string>
+    <string name="no_message_text">Todavía sin mensajes!</string>
+
+    <string name="Home">Inicio</string>
+    <string name="Messages">Mensajes</string>
+    <string name="Feedbacks">Respuesta </string>
+    <string name="Profile">Perfil</string>
+
+    <string name="choose_event">Evento elegido</string>
+    <string name="show_image">Imagen de Perfil </string>
+    <string name="change_image">Cambiar imagen de Perfil</string>
+    <string name="delete_conversation">Eliminar conversación</string>
+    <string name="message_detail">Mensaje</string>
+    <string name="delete_message">Borrar mensaje</string>
+    <string name="copy_text">Copiar texto</string>
+    <string name="sent_date">Enviar cita : </string>
+    <string name="delivered_date">Cita enviada : </string>
+    <string name="seen_date">Cita vista : </string>
+
+    <string name="cancel">Cancelar</string>
+
+
+    <string name="error_invalid_email">Este email es incorrecto</string>
+    <string name="error_invalid_password">Esta contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta </string>
+    <string name="error_field_required">Este campo es obligatorio </string>
+    <string name="permission_rationale">" Los permisos de contactos son necesarios para proporcionar terminaciones de correo." </string>
+
+    <string name="pick_image_intent_text">Elige una imagen</string>
+    <string name="pick_image_message">Pincha en la imagen para elegir una nueva imagen:</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>

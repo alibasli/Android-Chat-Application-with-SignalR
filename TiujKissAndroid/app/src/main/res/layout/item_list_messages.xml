@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_messager_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp">
+
+            <goodapp.company.kissmyass.Class.CircleImageView
+                android:id="@+id/sender_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/default_profile"/>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TableRow android:layout_weight="0.40"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/list_msg_name_surname"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.60"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold|italic"
+                        android:text="User"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/list_msg_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.40"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:text="as"
+                        android:textSize="14sp"/>
+                </TableRow>
+                <TableRow android:layout_weight="0.60"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/lyt_message">
+                    <TextView
+                        android:id="@+id/list_msg_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.90"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="item messagee"
+                        android:maxWidth="250dp"
+                        android:maxLines="1"
+                        android:maxLength="30"
+                        android:ellipsize="end"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/list_msg_unread_count"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.10"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textSize="25px"/>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
